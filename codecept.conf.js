@@ -33,5 +33,10 @@ exports.config = {
     features: './integration/features/*.feature',
     steps: ['./integration/step_definition/steps.js']
   },
+  mocha: {
+    "reporterOptions": {
+      "mochaFile": "output/result.xml"
+    }
+  },
   name: 'automationMobile'
 }
