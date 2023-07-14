@@ -12,7 +12,7 @@ exports.config = {
   output: './output',
   helpers: {
     Appium: {
-      app: './automationMobile/app/Calculator.apk',
+      app: 'C:/GIT/automationMobile/app/Calculator.apk',
       desiredCapabilities: {
         appPackage: 'com.google.android.calculator',
         appActivity: 'com.android.calculator2.Calculator',

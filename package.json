@@ -4,21 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run --steps adb forward tcp:8201 tcp:8201"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carlosscaldas/automationMobile.git"
+    "test": "npx codeceptjs run --steps"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/carlosscaldas/automationMobile/issues"
-  },
-  "homepage": "https://github.com/carlosscaldas/automationMobile#readme",
-  "devDependencies": {
-    "codeceptjs": "3.5.2",
+  "dependencies": {
+    "appium": "^1.22.3",
+    "codeceptjs": "3.4.1",
+    "codeceptjs-webdriverio": "^1.1.0",
+    "mocha-multi": "^1.1.7",
+    "mochawesome": "7.1.3",
     "webdriverio": "8.7.0"
+  },
+  "devDependencies": {
+    "mocha": "10.2.0"
   }
 }
