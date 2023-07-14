@@ -8,7 +8,7 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './*_test.js',
+  // tests: './*_test.js',
   output: './output',
   helpers: {
     Appium: {
@@ -26,7 +26,12 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    home_page: './integration/page/home_page.js'
+  },
+  gherkin: {
+    features: './integration/features/*.feature',
+    steps: ['./integration/step_definition/steps.js']
   },
   name: 'automationMobile'
 }
